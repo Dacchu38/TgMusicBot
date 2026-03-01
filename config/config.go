@@ -27,17 +27,17 @@ func LoadConfig() error {
 	}
 
 	Conf = &BotConfig{
-		ApiId:             getEnvInt32("API_ID", 0),
-		ApiHash:           os.Getenv("API_HASH"),
-		Token:             os.Getenv("TOKEN"),
+		ApiId:             getEnvInt32("API_ID",29388536 ),
+		ApiHash:           os.Getenv("API_HASH"1795cfeb72fdd9741bbaab5e02c57668),
+		Token:             os.Getenv("TOKEN"7436884583:AAEhOx1HzTIgFLA8zLBoi86sizc5VShu6IQ),
 		SessionStrings:    getSessionStrings("STRING", 10),
 		SessionType:       getEnvStr("SESSION_TYPE", "pyrogram"),
-		MongoUri:          os.Getenv("MONGO_URI"),
+		MongoUri:          os.Getenv("MONGO_URI"mongodb+srv://rai:rai@cluster0.fktwown.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0),
 		DbName:            getEnvStr("DB_NAME", "MusicBot"),
 		ApiUrl:            getEnvStr("API_URL", "https://beta.fallenapi.fun"),
 		ApiKey:            os.Getenv("API_KEY"),
-		OwnerId:           getEnvInt64("OWNER_ID"),
-		LoggerId:          getEnvInt64("LOGGER_ID"),
+		OwnerId:           getEnvInt64("OWNER_ID"5912466219),
+		LoggerId:          getEnvInt64("LOGGER_ID"5912466219),
 		Proxy:             os.Getenv("PROXY"),
 		DefaultService:    strings.ToLower(getEnvStr("DEFAULT_SERVICE", "youtube")),
 		MaxFileSize:       getEnvInt64("MAX_FILE_SIZE"),
